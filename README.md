@@ -4,9 +4,10 @@
 
 <h2>1.1 Presentaties</h2>
 Ik heb tot nu toe alleen een presentatie gehouden voor de tweede was ik ziek geweest dus was ik er niet bij.
-De presentatie die ik heb gehouden was op 15 september dus [week 3] (https://github.com/Eyegi/14102307/blob/master/Presentation/Week%203%20-%20Presentatie.pdf). 
+De presentatie die ik heb gehouden was op 15 september dus [I'm an inline-style link](https://www.google.com)
+[week 3] (https://github.com/Eyegi/14102307/blob/master/Presentation/Week%203%20-%20Presentatie.pdf). 
 De powerpoint is te vinden onder het mapje Presentaties. 
-Ook was ik en Kevin verantwwordelijk voor het updaten van de blog in week 3 en 4. Dit is het gedeelte “Milestone 2” di te zien is op https://kb74.github.io/urbinn/
+Ook was ik en Kevin verantwwordelijk voor het updaten van de blog in week 3 en 4. Dit is het gedeelte “Milestone 2” die te zien is op https://kb74.github.io/urbinn/
 
 <h2>2.1 DataCamp</h2>
 VoorData camp heb ik alle opdrachten af tot en met Week 6 afgemaakt. De Screenshots hiervan zijn te vinden in het mapje DataCamp.
