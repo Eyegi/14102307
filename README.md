@@ -1,9 +1,9 @@
-#Urbinn
+# Urbinn
 
-##Opdrachten 1.0
+## Opdrachten 1.0
 
 
-###Scrum 1.1
+### Scrum 1.1
 “How does SCRUM try to comply to the values of the agile manifesto”
 Dit past bij Scrum omdat bij “Individuals and interactions over processes and tools” scrum gaat voor grooten deels over mensen di appart werken aan onderdelen maar toch samen komen om mogelijke problemen enzo te bespreken.
 “Working software over comprehensive documentation” Scrum focused op deliverables stukken werkend software bijvoorbeeld over dosumenten (dit betekent niet date r geen documenten zijn)
