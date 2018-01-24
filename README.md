@@ -3,7 +3,7 @@
 <h1> Urbinn </h1>
 
 <h2> Opdrachten 1.0 </h2>
-[I'm an inline-style link](https://www.google.com)
+
 
 <h3> Scrum 1.1 </h3>
 “How does SCRUM try to comply to the values of the agile manifesto”
