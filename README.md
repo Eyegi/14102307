@@ -134,7 +134,9 @@ int localBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eige
 Bij het maken van grotere pointclouds en incrementeel leren zijn wij er achter gekomen dat de memory leaks te groot werden en dat het programma dan crashed. Dus moesten wij de memory leaks proberen te fixen dit heeft heel veel tijd genomen.
 
 ### [Issue 137](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
-*Deze isuues is nog iet af maar de bedoeling is om handmatig de de punten aar loopclosure gedecteerd moet worden te zoeken.
+Hierbij ben ik begonnen met het zoeken door de trajectory te plotten van sequence 7. Eerst in kleine stappen todat ze elkaar "berijken" dan deze frame gekozen als de frames voor loopclosure.
+Daarna heb ik de photos getekens met behulp van python scripts in notebooks om de plaatjes te kijken en vergelijken.
+![Matching position for loop closure](https://github.com/Eyegi/14102307/blob/master/Images/MatchingForBASeq7.PNG "Image 1 and 1060")
 
 ### *[Issue 136](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
 Voor deze issue moest de code voor [full Bundle adjustment](/) gemaakt worden en getest hiervoor is issue 137 nodig.
