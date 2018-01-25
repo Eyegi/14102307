@@ -26,17 +26,19 @@ VoorData camp heb ik alle opdrachten af tot en met Week 6 afgemaakt. De Screensh
 ### 2.2Coursera
 Voor Coursera heb ik nu alle opdrachten af en heb ik screenshots gemaakt. Ik vond dit een intressante gedeelte van de minor maar het heeft wel veel tijd gekost.
 
-### 2.3 Notebooks
-
-Een van de online courses die we moesten maken was de note books. Het eerste gedeelte was [ExploratoryDataAnalysis](). 
-Toen dat klaar was gingen we over naar [tutorial_spark]() de Notebook files van deze opdrachten zijn te vinden in de [notebooks]().
-
 De resultaten van [Week1](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek1.PNG).
 De resultaten van week 2 zijn te zien in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week2.PNG), en week 3 kan [hier](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek3.PNG) gevonden worden. Week 6 is ook compleet en kan in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week%206.PNG) gevonden worden.
 
-## *3.0 Calling bullshit
+### 2.3 Notebooks
 
-*Als onderdeel van de minor moesten wij een course Calling bullshit in the age of datascience doen. Als eind product voor de course moesten wij een paar opdrachten maken en als [verslag]() inleveren.
+Een van de online courses die we moesten maken was de note books. Het eerste gedeelte was [ExploratoryDataAnalysis](https://github.com/Eyegi/14102307/tree/master/Notebooks/ExploratoryDataAnalysis). 
+Toen dat klaar was gingen we over naar [tutorial_spark](https://github.com/Eyegi/14102307/tree/master/Notebooks/Spark) de Notebook files van deze opdrachten zijn te vinden in de [notebooks](https://github.com/Eyegi/14102307/tree/master/Notebooks).
+
+
+## 3.0 Calling bullshit
+
+Als onderdeel van de minor moesten wij een course Calling bullshit in the age of datascience doen. Als eind product voor de course moesten wij een paar opdrachten maken en als [verslag](https://github.com/Eyegi/14102307/blob/master/Bullshit/Bullshit.pdf) inleveren.
+
 ## 4.0 Issues
 
 ###  [Issue 52](https://github.com/urbinn/urbinn/issues/52) Kijken hoe evaluatie TUM is gedaan:
@@ -64,7 +66,7 @@ Hierbij moest ik SVO instaleren en uitproberen op mijn pc het is gelukt om het t
 
 ### [Issue 37](https://github.com/urbinn/urbinn/issues/37) REMODE onderzoek:
 Voor deze issue moest ik onderzoeken of [REMODE-methode](https://github.com/Eyegi/14102307/blob/master/Documents/ICRA14_Pizzoli.pdf) goed was om te gebruiken om afstand te meten uit beelden.
-Dit bleek niet bij ons te passen omdat het voor MONO-camera’s waren en wij willen gebruik maken van stereo.
+Dit bleek niet bij ons te passen omdat het voor MONO-camera’s waren en wij willen gebruik maken van stereo. Als product hierbij is het volgende [Document](https://github.com/Eyegi/14102307/blob/master/Documents/Issue%2037%20-%20REMODE%20(REgularized%20MOnocular%20Depth%20Estimation)%20Onderzoek.pdf).
 
 ### [Issue 21](https://github.com/urbinn/urbinn/issues/21) Zoeken naar tutorial/video’s voor LSD SLAM:
 In het begin van het project moest ik Video’s en of tutorial zoeken die LSD SLAM kon uitleggen zodat het beter te begrijpen werd door de rest van het groepje. Er waren geen duidelijke videos die de werking LSD slam uitlegde.
@@ -90,9 +92,9 @@ Bij eerste run hebben wij een coredumb gekregen. wij hebben hierdoor besloten om
 ###  [Issue 87](https://github.com/urbinn/urbinn/issues/91) Paper zoeken voor close reading sessie
 Hierbij moest ik papers zoeken voor de derde sessie van close reading sessie. De eerste was [Interactive Semantic Mapping: Experimental Evaluation](https://github.com/Eyegi/14102307/blob/master/Documents/14-iser.pdf) en de tweede was [A Proposal for Semantic Map Representation and Evaluation](https://github.com/Eyegi/14102307/blob/master/Documents/1606.03719.pdf).
 
-### *[Issue 81](https://github.com/urbinn/urbinn/issues/81) Literatuur scan: filteren slam met object detectie 
+### [Issue 81](https://github.com/urbinn/urbinn/issues/81) Literatuur scan: filteren slam met object detectie 
 De bedoeling hierbij was om te kijken of er eerder werk is gedaan om objecten die gedetecteerd zjn met bijvoorbeeld YOLO uit slam te filteren zodat je een symantic map kan maken zonder bv autos er in te hebben. Hierbij is er geen eerderwerk gevonden het dichts bijzijnde was objecten duidelijker maken met object detection. Voor deze ticket hebben wij wel twee papers kunnen vinden
-die een beetje helpen met onze vragen naamelijk [Object detection ad tracking]() en [Monocular SLAM supported Object Recognition]().
+die een beetje helpen met onze vragen naamelijk [Object detection and tracking](https://github.com/Eyegi/14102307/blob/master/Documents/Object%20Detection%20and%20Tracking%20in%20RGB-D%20SLAM%20%20via%20Hierarchical%20Feature%20Grouping.pdf) en [Monocular SLAM supported Object Recognition](https://github.com/Eyegi/14102307/blob/master/Documents/Monocular%20Slam%20Object%20filtering.pdf).
 
 ###  [Issue 64](https://github.com/urbinn/urbinn/issues/64) Evaluatie implementatie: pointcloud vs pointcloud
 Hierij moest er een manier gevonden worden om de pointcloud te evalueren. Hierbij hebben wij eerst gekeken of het op basis van LiDAR kan gebeuren maar dit was niet mogelijk. Daarna hebben wij gekeken of het kon met de mesh 
@@ -101,9 +103,9 @@ die door de ZED camera gemaakt werd maar dit was niet mogelijk omdat de mesh gee
 ### [Issue 79](https://github.com/urbinn/urbinn/issues/79) ORB coordinaten converteren 
 Bij deze issue was het de bedoeling om de coordinaten die door orb gegeven waren te vertalen naar meters. Wij waren bezig om dit werkend te krijgen maar wij hebben geen formule gevonden om het goed te kunnen doen, maar zijn ook gestopt hiermee omdat het niet meer nodig was voor ons project.
 
-### [Issue 80](https://github.com/urbinn/urbinn/issues/80)ORB output uitbreiden met keyframe coordinaten
+### [Issue 80 ](https://github.com/urbinn/urbinn/issues/80)ORB output uitbreiden met keyframe coordinaten
 
-### *[Issue 126](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
+### *[Issue 126 ](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
 Bij deze punt ben ik overgestapt van ORB naar URB ik moest de [Local Bundle Adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/local_ba.cpp) code maken. En later kwam daniello mij hierbij helpen. 
 
 ``` cpp
@@ -135,21 +137,39 @@ int localBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eige
         lLocalKeyFrames.push_back(frame);
     }
 ```
-### [Issue 113](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
+### [Issue 113 ](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
 
-### [Issue 107](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
+### [Issue 107 ](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
 Bij het maken van grotere pointclouds en incrementeel leren zijn wij er achter gekomen dat de memory leaks te groot werden en dat het programma dan crashed. Dus moesten wij de memory leaks proberen te fixen dit heeft heel veel tijd genomen.
 
-### [Issue 137](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
+### [Issue 137 ](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
 Hierbij ben ik begonnen met het zoeken door de trajectory te plotten van sequence 7. Eerst in kleine stappen todat ze elkaar "berijken" dan deze frame gekozen als de frames voor loopclosure.
 Daarna heb ik de photos getekens met behulp van python scripts in notebooks om de plaatjes te kijken en vergelijken.
 ![Matching position for loop closure](https://github.com/Eyegi/14102307/blob/master/Images/MatchingForBASeq7.PNG "Image 1 and 1060")
 
-### *[Issue 136](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
+### *[Issue 136 ](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
 Voor deze issue moest de code voor [full Bundle adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/full_ba.cpp) gemaakt worden en getest hiervoor is issue 137 nodig.
+Een klein vooreeld is hier te zien.
+``` cpp
+int fullBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eigen::MatrixXd> mapPoints, Eigen::Ref<Eigen::MatrixXd> pointsRelation )  {
 
-### [Issue 132](https://github.com/urbinn/urbinn/issues/132)ORB Efficient depth estimation 
+    int primaryKeyframeId = keyframes.row(0)(0) ;
+
+       //step 1 setup keyframes
+    std::vector<KeyFrame> vpKFs;
+    for(int n = 0; n < keyframes.rows(); n++) {
+        Eigen::MatrixXd currentFrame(4, 4);
+        currentFrame << keyFrameRowToMatrix(keyframes.row(n));
+        // cout << currentFrame << std::endl;
+        // cout << keyframes.row(n)(0) << endl;
+        KeyFrame frame = std::make_pair( std::make_pair(n,keyframes.row(n)(0)) , currentFrame);
+        vpKFs.push_back(frame);
+}
+```
+
+### [Issue 132 ](https://github.com/urbinn/urbinn/issues/132)ORB Efficient depth estimation 
 De bedoeling van deze issue was om te kijken of depth estimation sneller gemaakt kon worden maar dit was even op hold gezet om Full bundle adjustment te maken.
+Aan het einde is dit niet meer gebeurt door tijds gebrek.
 
 
 
