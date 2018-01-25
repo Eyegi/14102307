@@ -26,10 +26,17 @@ VoorData camp heb ik alle opdrachten af tot en met Week 6 afgemaakt. De Screensh
 ### 2.2Coursera
 Voor Coursera heb ik nu alle opdrachten af en heb ik screenshots gemaakt. Ik vond dit een intressante gedeelte van de minor maar het heeft wel veel tijd gekost.
 
+### 2.3 Notebooks
+
+Een van de online courses die we moesten maken was de note books. Het eerste gedeelte was [ExploratoryDataAnalysis](). 
+Toen dat klaar was gingen we over naar [tutorial_spark]() de Notebook files van deze opdrachten zijn te vinden in de [notebooks]().
+
 De resultaten van [Week1](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek1.PNG).
 De resultaten van week 2 zijn te zien in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week2.PNG), en week 3 kan [hier](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek3.PNG) gevonden worden. Week 6 is ook compleet en kan in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week%206.PNG) gevonden worden.
 
+## *3.0 Calling bullshit
 
+*Als onderdeel van de minor moesten wij een course Calling bullshit in the age of datascience doen. Als eind product voor de course moesten wij een paar opdrachten maken en als [verslag]() inleveren.
 ## 4.0 Issues
 
 ###  [Issue 52](https://github.com/urbinn/urbinn/issues/52) Kijken hoe evaluatie TUM is gedaan:
@@ -69,7 +76,7 @@ Voor deze issue heb ik samen met Daniello gekeken hoe wij de orbs van elke afbee
 Dit zodat wij een idee konden krijgen waar hij orbs zette en ook ter evaluatie van onze eigen dataset voor de toekomst. 
 Het is ons gelukt om de//////////////////////////////////////////////////// [X en Y-coördinatenNOTDONE](/) aan te tonen op de afbeelding maar de berekening van de diepte hebben wij nog niet goedkunnen doen.
 
-### *csv link[Issue 91](/https://github.com/urbinn/urbinn/issues/91) ORB2 pointcloud maken slinger:
+### [Issue 91](/https://github.com/urbinn/urbinn/issues/91) ORB2 pointcloud maken slinger:
 Voor deze issue moest er een pointcloud gemaakt worden van de slinger om dit te doen moest er eerst een [calibratie bestand](https://github.com/Eyegi/14102307/blob/master/Code/slinger.txt) van de ZED camera geschreven worden met de correcte waardes die orb kan geruiken.
 Daara moest de KITTI.cc bestand aangepast worden zodat het gebruikt kon worden voor onze bestanden deze is [slinger.cc](https://github.com/Eyegi/14102307/blob/master/Code/slinger.cc) gewroden. Hierbij moest een paar kleine aanpassingen gedaan worden in de kitti.cc. 
 ``` cpp
@@ -78,7 +85,7 @@ string strPrefixRight = strPathToSequence + "/right";
 ```
 om de juiste images te pakken gebruiken wij left en right terwijl kitti 0 en 1 genruikt.
 Als laatste moest er ook een [timestamp](https://github.com/Eyegi/14102307/blob/master/Code/timestamps.txt) bestand gemaakt worden 
-Bij eerste run hebben wij een coredumb gekregen. wij hebben hierdoor besloten om de code die wij hebben gemaakt om XML bestand te maken even weg te laten en opniew runnen toen ging het goed en hebben wij de [csv](/) bestand gekregen.
+Bij eerste run hebben wij een coredumb gekregen. wij hebben hierdoor besloten om de code die wij hebben gemaakt om XML bestand te maken even weg te laten en opniew runnen toen ging het goed en hebben wij de [csv](https://github.com/Eyegi/14102307/blob/master/Code/map2.csv) bestand gekregen.
 
 ###  [Issue 87](https://github.com/urbinn/urbinn/issues/91) Paper zoeken voor close reading sessie
 Hierbij moest ik papers zoeken voor de derde sessie van close reading sessie. De eerste was [Interactive Semantic Mapping: Experimental Evaluation](https://github.com/Eyegi/14102307/blob/master/Documents/14-iser.pdf) en de tweede was [A Proposal for Semantic Map Representation and Evaluation](https://github.com/Eyegi/14102307/blob/master/Documents/1606.03719.pdf).
@@ -97,7 +104,7 @@ Bij deze issue was het de bedoeling om de coordinaten die door orb gegeven waren
 ### [Issue 80](https://github.com/urbinn/urbinn/issues/80)ORB output uitbreiden met keyframe coordinaten
 
 ### *[Issue 126](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
-Bij deze punt ben ik overgestapt van ORB naar URB ik moest de [Local Bundle Adjustment](/) code maken. En later kwam daniello mij hierbij helpen. 
+Bij deze punt ben ik overgestapt van ORB naar URB ik moest de [Local Bundle Adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/local_ba.cpp) code maken. En later kwam daniello mij hierbij helpen. 
 
 ``` cpp
 int localBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eigen::MatrixXd> fixedKeyframes, Eigen::Ref<Eigen::MatrixXd> worldMapPoints, Eigen::Ref<Eigen::MatrixXd> pointsRelation )  {
@@ -139,7 +146,7 @@ Daarna heb ik de photos getekens met behulp van python scripts in notebooks om d
 ![Matching position for loop closure](https://github.com/Eyegi/14102307/blob/master/Images/MatchingForBASeq7.PNG "Image 1 and 1060")
 
 ### *[Issue 136](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
-Voor deze issue moest de code voor [full Bundle adjustment](/) gemaakt worden en getest hiervoor is issue 137 nodig.
+Voor deze issue moest de code voor [full Bundle adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/full_ba.cpp) gemaakt worden en getest hiervoor is issue 137 nodig.
 
 ### [Issue 132](https://github.com/urbinn/urbinn/issues/132)ORB Efficient depth estimation 
 De bedoeling van deze issue was om te kijken of depth estimation sneller gemaakt kon worden maar dit was even op hold gezet om Full bundle adjustment te maken.
