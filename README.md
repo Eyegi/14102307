@@ -137,10 +137,31 @@ int localBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eige
         lLocalKeyFrames.push_back(frame);
     }
 ```
-### [Issue 113 ](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
+### *[Issue 113 ](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
 
-### [Issue 107 ](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
+Voor deze Issue moest ik de code aan passen van stereo_Kitti.cc zodat de poses van elke frame gescgreven werdt zodat dat geruikt kon worden als evaluatie van de poses die van URB komen. De aangepaste [Stereo_kitty.cc_]()
+kan hier gevonden worden.
+``` cpp
+ofstream poseFrames;
+	poseFrames.open("/home/14102307/PoseOfFrame.csv");
+	for (auto framePose : framePoseArray) {
+		for (float &f : cv::Mat_<float>(framePose)) {
+			 poseFrames << f  << "," ;
+		}
+		poseFrames << std::endl;
+		//for (auto matrixValue : framePose)
+		//{
+		//	poseFrames << matrixValue << ",";
+		//	poseFrames << endl;
+		//}
+	}
+	poseFrames.close();
+```
+Als resultaat van dit is de bestand [PoseOfFrame.csv]() uitgekomen.
+
+### *[Issue 107 ](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
 Bij het maken van grotere pointclouds en incrementeel leren zijn wij er achter gekomen dat de memory leaks te groot werden en dat het programma dan crashed. Dus moesten wij de memory leaks proberen te fixen dit heeft heel veel tijd genomen.
+memorey leaks gebeurde in verschillende gedeeltes van de code. Een best wel grote was bij de mutex. De resultaten van de fixes zijn te vinden in code van orb in het map [ORB]().
 
 ### [Issue 137 ](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
 Hierbij ben ik begonnen met het zoeken door de trajectory te plotten van sequence 7. Eerst in kleine stappen todat ze elkaar "berijken" dan deze frame gekozen als de frames voor loopclosure.
