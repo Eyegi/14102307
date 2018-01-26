@@ -73,10 +73,10 @@ In het begin van het project moest ik Video’s en of tutorial zoeken die LSD SL
 Meeste videos waren voorbeelden waar met lsd slam gewerkt was.
 
 
-### *[Issue 46](https://github.com/urbinn/urbinn/issues/46) Visualisatie point/frame:
+### [Issue 46](https://github.com/urbinn/urbinn/issues/46) Visualisatie point/frame:
 Voor deze issue heb ik samen met Daniello gekeken hoe wij de orbs van elke afbeelding kon tonen op de afbeelding.
 Dit zodat wij een idee konden krijgen waar hij orbs zette en ook ter evaluatie van onze eigen dataset voor de toekomst. 
-Het is ons gelukt om de//////////////////////////////////////////////////// [X en Y-coördinatenNOTDONE](/) aan te tonen op de afbeelding maar de berekening van de diepte hebben wij nog niet goedkunnen doen.
+Het is ons gelukt om de X en Y-coördinaten aan te tonen op de afbeelding maar de berekening van de diepte hebben wij nog niet goedkunnen doen.
 
 ### [Issue 91](/https://github.com/urbinn/urbinn/issues/91) ORB2 pointcloud maken slinger:
 Voor deze issue moest er een pointcloud gemaakt worden van de slinger om dit te doen moest er eerst een [calibratie bestand](https://github.com/Eyegi/14102307/blob/master/Code/slinger.txt) van de ZED camera geschreven worden met de correcte waardes die orb kan geruiken.
@@ -104,8 +104,9 @@ die door de ZED camera gemaakt werd maar dit was niet mogelijk omdat de mesh gee
 Bij deze issue was het de bedoeling om de coordinaten die door orb gegeven waren te vertalen naar meters. Wij waren bezig om dit werkend te krijgen maar wij hebben geen formule gevonden om het goed te kunnen doen, maar zijn ook gestopt hiermee omdat het niet meer nodig was voor ons project.
 
 ### [Issue 80 ](https://github.com/urbinn/urbinn/issues/80)ORB output uitbreiden met keyframe coordinaten
+Net als issue 79 is deze ook uitgevallen.
 
-### *[Issue 126 ](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
+### [Issue 126 ](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
 Bij deze punt ben ik overgestapt van ORB naar URB ik moest de [Local Bundle Adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/local_ba.cpp) code maken. En later kwam daniello mij hierbij helpen. 
 
 ``` cpp
@@ -137,9 +138,9 @@ int localBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eige
         lLocalKeyFrames.push_back(frame);
     }
 ```
-### *[Issue 113 ](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
+### [Issue 113 ](https://github.com/urbinn/urbinn/issues/113)ORB ORB2: Camera poses uit frames exporteren 
 
-Voor deze Issue moest ik de code aan passen van stereo_Kitti.cc zodat de poses van elke frame gescgreven werdt zodat dat geruikt kon worden als evaluatie van de poses die van URB komen. De aangepaste [Stereo_kitty.cc_]()
+Voor deze Issue moest ik de code aan passen van stereo_Kitti.cc zodat de poses van elke frame gescgreven werdt zodat dat geruikt kon worden als evaluatie van de poses die van URB komen. De aangepaste [Stereo_kitty.cc](https://github.com/Eyegi/14102307/blob/master/Code/stereo_kitti.cc)
 kan hier gevonden worden.
 ``` cpp
 ofstream poseFrames;
@@ -157,18 +158,18 @@ ofstream poseFrames;
 	}
 	poseFrames.close();
 ```
-Als resultaat van dit is de bestand [PoseOfFrame.csv]() uitgekomen.
+Als resultaat van dit is de bestand [PoseOfFrame.csv](https://github.com/Eyegi/14102307/blob/master/Code/PoseOfFrame.csv) uitgekomen.
 
-### *[Issue 107 ](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
+### [Issue 107 ](https://github.com/urbinn/urbinn/issues/107)ORB Orb2 stability fix 
 Bij het maken van grotere pointclouds en incrementeel leren zijn wij er achter gekomen dat de memory leaks te groot werden en dat het programma dan crashed. Dus moesten wij de memory leaks proberen te fixen dit heeft heel veel tijd genomen.
-memorey leaks gebeurde in verschillende gedeeltes van de code. Een best wel grote was bij de mutex. De resultaten van de fixes zijn te vinden in code van orb in het map [ORB]().
+memorey leaks gebeurde in verschillende gedeeltes van de code. Een best wel grote was bij de mutex. De resultaten van de fixes zijn te vinden in code van orb in het map [ORB](https://github.com/Eyegi/14102307/tree/master/Code/ORB).
 
 ### [Issue 137 ](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
 Hierbij ben ik begonnen met het zoeken door de trajectory te plotten van sequence 7. Eerst in kleine stappen todat ze elkaar "berijken" dan deze frame gekozen als de frames voor loopclosure.
 Daarna heb ik de photos getekens met behulp van python scripts in notebooks om de plaatjes te kijken en vergelijken.
 ![Matching position for loop closure](https://github.com/Eyegi/14102307/blob/master/Images/MatchingForBASeq7.PNG "Image 1 and 1060")
 
-### *[Issue 136 ](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
+### [Issue 136 ](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
 Voor deze issue moest de code voor [full Bundle adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/full_ba.cpp) gemaakt worden en getest hiervoor is issue 137 nodig.
 Een klein vooreeld is hier te zien.
 ``` cpp
