@@ -80,13 +80,13 @@ Het is ons gelukt om de X en Y-coördinaten aan te tonen op de afbeelding maar d
 
 ### [Issue 91](/https://github.com/urbinn/urbinn/issues/91) ORB2 pointcloud maken slinger:
 Voor deze issue moest er een pointcloud gemaakt worden van de slinger om dit te doen moest er eerst een [calibratie bestand](https://github.com/Eyegi/14102307/blob/master/Code/slinger.txt) van de ZED camera geschreven worden met de correcte waardes die orb kan geruiken.
-Daara moest de KITTI.cc bestand aangepast worden zodat het gebruikt kon worden voor onze bestanden deze is [slinger.cc](https://github.com/Eyegi/14102307/blob/master/Code/slinger.cc) gewroden. Hierbij moest een paar kleine aanpassingen gedaan worden in de kitti.cc. 
+Daara moest de KITTI.cc bestand aangepast worden zodat het gebruikt kon worden voor onze bestanden deze is [slinger.cc](https://github.com/Eyegi/14102307/blob/master/Code/slinger.cc) gewroden. Hierbij moest een paar kleine aanpassingen gedaan worden in de kitti.cc. Een van de aanpassingen kan hier gezien worden.
 ``` cpp
 string strPrefixLeft = strPathToSequence + "/left";
 string strPrefixRight = strPathToSequence + "/right";
 ```
 om de juiste images te pakken gebruiken wij left en right terwijl kitti 0 en 1 genruikt.
-Als laatste moest er ook een [timestamp](https://github.com/Eyegi/14102307/blob/master/Code/timestamps.txt) bestand gemaakt worden 
+Als laatste moest er ook een [timestamp](https://github.com/Eyegi/14102307/blob/master/Code/timestamps.txt) bestand gemaakt worden. 
 Bij eerste run hebben wij een coredumb gekregen. wij hebben hierdoor besloten om de code die wij hebben gemaakt om XML bestand te maken even weg te laten en opniew runnen toen ging het goed en hebben wij de [csv](https://github.com/Eyegi/14102307/blob/master/Code/map2.csv) bestand gekregen.
 
 ###  [Issue 87](https://github.com/urbinn/urbinn/issues/91) Paper zoeken voor close reading sessie
