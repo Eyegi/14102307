@@ -27,7 +27,7 @@ VoorData camp heb ik alle opdrachten af tot en met Week 6 afgemaakt. De Screensh
 Voor Coursera heb ik nu alle opdrachten af en heb ik screenshots gemaakt. Ik vond dit een intressante gedeelte van de minor maar het heeft wel veel tijd gekost.
 
 De resultaten van [Week1](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek1.PNG).
-De resultaten van week 2 zijn te zien in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week2.PNG), en week 3 kan [hier](https://github.com/Eyegi/14102307/blob/master/Coursera/CourseraWeek3.PNG) gevonden worden. Week 6 is ook compleet en kan in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week%206.PNG) gevonden worden.
+De resultaten van week 2 zijn te zien in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week2.PNG), en week 3 kan [hier](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week%203.PNG) gevonden worden. Week 6 is ook compleet en kan in dit [screenshot](https://github.com/Eyegi/14102307/blob/master/Coursera/Coursera%20Week%206.PNG) gevonden worden.
 
 ### 2.3 Notebooks
 
