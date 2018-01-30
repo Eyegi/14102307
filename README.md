@@ -106,7 +106,7 @@ Bij deze issue was het de bedoeling om de coordinaten die door orb gegeven waren
 ### [Issue 80 ](https://github.com/urbinn/urbinn/issues/80)ORB output uitbreiden met keyframe coordinaten
 Net als issue 79 is deze ook uitgevallen.
 
-### [Issue 126 ](https://github.com/urbinn/urbinn/issues/126)ORB Local Bundle Adjustment
+### [Issue 126 ](https://github.com/urbinn/urbinn/issues/126)URB Local Bundle Adjustment
 Bij deze punt ben ik overgestapt van ORB naar URB ik moest de [Local Bundle Adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/local_ba.cpp) code maken. En later kwam daniello mij hierbij helpen. 
 
 ``` cpp
@@ -164,12 +164,12 @@ Als resultaat van dit is de bestand [PoseOfFrame.csv](https://github.com/Eyegi/1
 Bij het maken van grotere pointclouds en incrementeel leren zijn wij er achter gekomen dat de memory leaks te groot werden en dat het programma dan crashed. Dus moesten wij de memory leaks proberen te fixen dit heeft heel veel tijd genomen.
 memorey leaks gebeurde in verschillende gedeeltes van de code. Een best wel grote was bij de mutex. De resultaten van de fixes zijn te vinden in code van orb in het map [ORB](https://github.com/Eyegi/14102307/tree/master/Code/ORB).
 
-### [Issue 137 ](https://github.com/urbinn/urbinn/issues/137)ORB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
+### [Issue 137 ](https://github.com/urbinn/urbinn/issues/137)URB Handmatig bepalen welke frame overlappen op Sequence 07 KITTI 
 Hierbij ben ik begonnen met het zoeken door de trajectory te plotten van sequence 7. Eerst in kleine stappen todat ze elkaar "berijken" dan deze frame gekozen als de frames voor loopclosure.
 Daarna heb ik de photos getekens met behulp van python scripts in notebooks om de plaatjes te kijken en vergelijken.
 ![Matching position for loop closure](https://github.com/Eyegi/14102307/blob/master/Images/MatchingForBASeq7.PNG "Image 1 and 1060")
 
-### [Issue 136 ](https://github.com/urbinn/urbinn/issues/136)ORB Full BA code schrijven 
+### [Issue 136 ](https://github.com/urbinn/urbinn/issues/136)URB Full BA code schrijven 
 Voor deze issue moest de code voor [full Bundle adjustment](https://github.com/Eyegi/14102307/blob/master/Code/URB/full_ba.cpp) gemaakt worden en getest hiervoor is issue 137 nodig.
 Een klein vooreeld is hier te zien.
 ``` cpp
@@ -189,7 +189,7 @@ int fullBundleAdjustment(Eigen::Ref<Eigen::MatrixXd> keyframes, Eigen::Ref<Eigen
 }
 ```
 
-### [Issue 132 ](https://github.com/urbinn/urbinn/issues/132)ORB Efficient depth estimation 
+### [Issue 132 ](https://github.com/urbinn/urbinn/issues/132)URB Efficient depth estimation 
 De bedoeling van deze issue was om te kijken of depth estimation sneller gemaakt kon worden maar dit was even op hold gezet om Full bundle adjustment te maken.
 Aan het einde is dit niet meer gebeurt door tijds gebrek.
 
